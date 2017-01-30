@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
-
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="918.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <center>
@@ -13,24 +20,82 @@
          <children>
             <TabPane layoutX="25.0" layoutY="34.0" prefHeight="851.0" prefWidth="667.0" style="-fx-background-color: #9999;" tabClosingPolicy="UNAVAILABLE">
               <tabs>
-                <Tab text="Untitled Tab 1">
+                <Tab text="영어회화">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <SplitMenuButton layoutX="14.0" layoutY="24.0" mnemonicParsing="false" text="분류">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="인사" />
+                                  <MenuItem mnemonicParsing="false" text="식당" />
+                                    <MenuItem mnemonicParsing="false" text="숙박" />
+                                    <MenuItem mnemonicParsing="false" text="병원" />
+                                    <MenuItem mnemonicParsing="false" text="드라마" />
+                                </items>
+                              </SplitMenuButton>
+                              <TextField layoutX="87.0" layoutY="24.0" prefHeight="23.0" prefWidth="499.0" />
+                              <Button layoutX="594.0" layoutY="24.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="50.0" text="검색" />
+                              <Label layoutX="16.0" layoutY="60.0" prefHeight="283.0" prefWidth="635.0" style="-fx-background-color: #fff;" />
+                              <Button layoutX="564.0" layoutY="353.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="90.0" text="Button" />
+                              <Label layoutX="16.0" layoutY="402.0" prefHeight="382.0" prefWidth="635.0" style="-fx-background-color: #fff;" />
+                              <SplitMenuButton layoutX="73.0" layoutY="434.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="104.0" text="분류">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="인사" />
+                                    <MenuItem mnemonicParsing="false" text="식당" />
+                                    <MenuItem mnemonicParsing="false" text="숙박" />
+                                    <MenuItem mnemonicParsing="false" text="병원" />
+                                    <MenuItem mnemonicParsing="false" text="드라마" />
+                                 </items>
+                              </SplitMenuButton>
+                              <TextField layoutX="73.0" layoutY="490.0" prefHeight="70.0" prefWidth="521.0" />
+                              <TextField layoutX="73.0" layoutY="579.0" prefHeight="70.0" prefWidth="521.0" />
+                              <Button layoutX="286.0" layoutY="670.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="90.0" text="Button" />
+                              <Button layoutX="504.0" layoutY="670.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="90.0" text="Button" />
+                           </children></AnchorPane>
+                     </content>
+                  </Tab>
+                <Tab text="영어사전">
                      <content>
                         <AnchorPane prefHeight="200.0" prefWidth="200.0" />
                      </content>
                   </Tab>
-                <Tab text="Untitled Tab 2">
+                  <Tab text="단어장">
                      <content>
                         <AnchorPane prefHeight="200.0" prefWidth="200.0" />
                      </content>
                   </Tab>
-                  <Tab text="Untitled Tab 3">
+                  <Tab text="공지사항">
                      <content>
-                        <AnchorPane prefHeight="200.0" prefWidth="200.0" />
-                     </content>
-                  </Tab>
-                  <Tab text="Untitled Tab 4">
-                     <content>
-                        <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <SplitMenuButton layoutX="14.0" layoutY="24.0" mnemonicParsing="false" text="분류">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="인사" />
+                                    <MenuItem mnemonicParsing="false" text="식당" />
+                                    <MenuItem mnemonicParsing="false" text="숙박" />
+                                    <MenuItem mnemonicParsing="false" text="병원" />
+                                    <MenuItem mnemonicParsing="false" text="드라마" />
+                                 </items>
+                              </SplitMenuButton>
+                              <TextField layoutX="87.0" layoutY="24.0" prefHeight="23.0" prefWidth="328.0" />
+                              <Button layoutX="425.0" layoutY="24.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="50.0" text="검색" />
+                              <TableView layoutX="16.0" layoutY="60.0" prefHeight="284.0" prefWidth="636.0">
+                                <columns>
+                                  <TableColumn prefWidth="40.0" text="No." />
+                                  <TableColumn prefWidth="308.0" text="제목" />
+                                    <TableColumn prefWidth="90.0" text="작성자" />
+                                    <TableColumn prefWidth="142.0" text="작성일" />
+                                    <TableColumn minWidth="0.0" prefWidth="54.0" text="조회" />
+                                </columns>
+                              </TableView>
+                              <Button layoutX="562.0" layoutY="22.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="90.0" text="글쓰기" />
+                              <Label layoutX="16.0" layoutY="392.0" prefHeight="382.0" prefWidth="635.0" style="-fx-background-color: #fff;" />
+                              <TextField layoutX="73.0" layoutY="417.0" prefHeight="26.0" prefWidth="349.0" />
+                              <Button layoutX="504.0" layoutY="711.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="90.0" text="Button" />
+                              <Button layoutX="289.0" layoutY="711.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="90.0" text="Button" />
+                              <TextField layoutX="436.0" layoutY="417.0" prefHeight="26.0" prefWidth="159.0" />
+                              <TextArea layoutX="74.0" layoutY="452.0" prefHeight="244.0" prefWidth="521.0" />
+                           </children></AnchorPane>
                      </content>
                   </Tab>
               </tabs>
