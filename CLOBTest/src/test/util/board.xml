@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="board">
+	<typeAlias alias="b_dto" type="test.dto.BoardDTO"/>
+	<!-- CLOB 타입을 String 형으로 맵핑하여 사용하기위해 resultMap 설정 -->
+	<resultMap class="test.dto.BoardDTO" id="mapDTO">
+		<result property="num" column="num"/>
+		<result property="title" column="title"/>
+		<result property="content" column="content" 
+			jdbcType="CLOB" javaType="java.lang.String"/>
+		<result property="regdate" column="regdate"/>	
+	</resultMap>
+	
+	<insert id="board_insert" parameterClass="b_dto">
+		INSERT INTO board 
+		VALUES(my_seq.NEXTVAL , #title#, #content#, SYSDATE)
+	</insert>
+	<select id="board_getList" resultMap="mapDTO">
+		
+		SELECT * FROM board 
+	
+	</select>
+	<select id="test1">
+		SELECT * FROM board 
+	 <![CDATA[ 	WHERE num <= 5   ]]>
+	</select>
+</sqlMap>
+
+
+
+
+
+
+
+
+
+ 
+ 
