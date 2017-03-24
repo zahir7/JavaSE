@@ -41,20 +41,22 @@ public class MainApp {
 	static String url = "jdbc:mysql://lenkim.ipdisk.co.kr:3306/test";
 	public static void main(String[] args) {
 		
+		System.out.println("123123132");
+		
 		Connection conn = null;
 		Statement stmt = null;
 		ResultSet rs = null;
 		
 		try {
 			
-			Class.forName("com.mysql.jdbc.Driver"); // 1 diriver 로드
+			Class.forName("com.mysql.jdbc.Driver"); // 1 diriver 로드 
 			
 			conn = (Connection) DriverManager.getConnection(url,"com","com");	// 2. conn 생성
 			stmt = (Statement) conn.createStatement();	// 3. conn -> statement 생성
 			
 			StringBuffer sb = new StringBuffer();
 			
-			sb.append("select * from test");
+			sb.append("SELECT * FROM SAMPLE");
 //			sb.append("insert into test values(");
 //			sb.append("2, '임종천')");
 			
@@ -65,8 +67,9 @@ public class MainApp {
 //			int result = stmt.executeUpdate(sb.toString());	// sql문 실행
 //			System.out.println(result);
 			
+			
 			while(rs.next()){
-				int num = rs.getInt(1);
+				String num = rs.getString(1);
 				String name = rs.getString(2);
 				System.out.println(num +" : " + name);
 			}
