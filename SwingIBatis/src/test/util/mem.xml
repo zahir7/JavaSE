@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="mem">
+	<typeAlias alias="dto" type="test.dto.MemDTO"/>
+	<!-- 실행할 SQL 문 작성하기. -->
+	<insert id="insert" parameterClass="test.dto.MemDTO">
+		INSERT INTO member VALUES(#num#,#name#,#addr#)
+	</insert>
+	<select id="getList" resultClass="dto">
+		SELECT num, name, addr FROM member ORDER BY num DESC
+	</select>
+	<delete id="delete" parameterClass="int">
+		DELETE FROM member WHERE num=#num# 
+	</delete>
+	<update id="update" parameterClass="dto	">
+		UPDATE member SET addr=#addr# WHERE num=#num# 
+	</update>
+</sqlMap>
+
+
+
+
+
+
+
+
+
+ 
+ 
