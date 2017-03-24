@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap      
+    PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"      
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="mem">
+
+	<select id="mem_getList" resultClass="test.dto.MemDTO">
+		SELECT * FROM member
+	</select>
+	
+	<select id="mem_getList2" resultClass="java.util.HashMap">
+		SELECT * FROM member
+	</select>
+
+	<select id="mem_getData" resultClass="test.dto.MemDTO">
+		SELECT * FROM member WHERE num = #num#
+	</select>
+	
+	<select id="mem_getData2" resultClass="java.util.HashMap">
+		SELECT num ,name ,addr FROM member WHERE num = #num#
+	</select>
+	
+	<insert id="mem_insert" parameterClass="test.dto.MemDTO">
+		INSERT INTO member VALUES(#num#, #name#, #addr#)
+	</insert>
+	
+	<insert id="mem_insert2" parameterClass="java.util.HashMap">
+		INSERT INTO member VALUES(#num#, #name#, #addr#)
+	</insert>
+	
+	<select id="mem_getString" resultClass="java.lang.String">
+		SELECT name FROM member WHERE num = #num#
+	</select>
+	
+	<select id="mem_getOneTOFive" resultClass="test.dto.MemDTO">
+		SELECT * FROM member 
+		<![CDATA[ WHERE num >=1 AND num <=5 ]]>
+	</select>
+</sqlMap>
