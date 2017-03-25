@@ -9,30 +9,26 @@ import com.mysql.jdbc.Driver;
 import com.mysql.jdbc.Statement;
 
 /*	
-
  	JDBC - JAVA DATA BASE CONECTIVITY
-  	±âº» API·Î´Â ¾ÈµÊ. ¿ÀÇÂ¼Ò½º ¶óÀÌºê·¯¸® Ãß°¡ÇØ¾ßÇÔ.
+  	ê¸°ë³¸ APIë¡œëŠ” ì•ˆë¨. ì˜¤í”ˆì†ŒìŠ¤ ë¼ì´ë¸ŒëŸ¬ë¦¬ ì¶”ê°€í•´ì•¼í•¨.
   	
   	DATA BASE MANNAGEMNET SYSTEM
   		- ORACLE, MYSQL = MARIADB, MSSQL(SQL SERVER), CUBRID
-  		TIBERO, MONGODB µî
+  		TIBERO, MONGODB ë“±
   	
-  	1. JDBC DRIVER °´Ã¼ ¸Ş¸ğ¸®¿¡ ·Îµå
-  	2. DRIVER ÅëÇØ Connection °´Ã¼ »ı¼º.
-  	3. Connection °´Ã¼¸¦ ÅëÇØ Statement °´Ã¼ »ı¼º
-  	4. Statement °´Ã¼¸¦ ÅëÇØ SQLÁúÀÇ ¶Ç´Â SQL¹® ÀÛ¼º.
-  	5. Statement·Î SQL¹® ½ÇÇà.
-  	6. ResultSet °´Ã¼·Î SQLÁúÀÇ¾î ¹ŞÀ½.
+  	1. JDBC DRIVER ê°ì²´ ë©”ëª¨ë¦¬ì— ë¡œë“œ
+  	2. DRIVER í†µí•´ Connection ê°ì²´ ìƒì„±.
+  	3. Connection ê°ì²´ë¥¼ í†µí•´ Statement ê°ì²´ ìƒì„±
+  	4. Statement ê°ì²´ë¥¼ í†µí•´ SQLì§ˆì˜ ë˜ëŠ” SQLë¬¸ ì‘ì„±.
+  	5. Statementë¡œ SQLë¬¸ ì‹¤í–‰.
+  	6. ResultSet ê°ì²´ë¡œ SQLì§ˆì˜ì–´ ë°›ìŒ.
   	7. Connection close().
   	
   	CREATE TABLE `test` (
   		`num` int(11) DEFAULT NULL,
   		`name` varchar(2000) DEFAULT NULL
 	) 
-
   	SELECT * FROM TEST;
-
-
 */
 
 
@@ -49,22 +45,22 @@ public class MainApp {
 		
 		try {
 			
-			Class.forName("com.mysql.jdbc.Driver"); // 1 diriver ·Îµå 
+			Class.forName("com.mysql.jdbc.Driver"); // 1 diriver ë¡œë“œ 
 			
-			conn = (Connection) DriverManager.getConnection(url,"com","com");	// 2. conn »ı¼º
-			stmt = (Statement) conn.createStatement();	// 3. conn -> statement »ı¼º
+			conn = (Connection) DriverManager.getConnection(url,"com","com");	// 2. conn ìƒì„±
+			stmt = (Statement) conn.createStatement();	// 3. conn -> statement ìƒì„±
 			
 			StringBuffer sb = new StringBuffer();
 			
 			sb.append("SELECT * FROM SAMPLE");
 //			sb.append("insert into test values(");
-//			sb.append("2, 'ÀÓÁ¾Ãµ')");
+//			sb.append("2, 'ì„ì¢…ì²œ')");
 			
 //			sb.append("delete from test");
 
-			rs = stmt.executeQuery(sb.toString());	// sql¹® ½ÇÇà
+			rs = stmt.executeQuery(sb.toString());	// sqlë¬¸ ì‹¤í–‰
 			
-//			int result = stmt.executeUpdate(sb.toString());	// sql¹® ½ÇÇà
+//			int result = stmt.executeUpdate(sb.toString());	// sqlë¬¸ ì‹¤í–‰
 //			System.out.println(result);
 			
 			

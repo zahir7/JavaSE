@@ -16,7 +16,7 @@ import com.mysql.jdbc.Statement;
 SELECT ID, NAME, DESCRIPTION, USE_YN, REG_USER			-- 5 
 FROM SAMPLE												-- 1
 WHERE ID = 'SAMPLE-00125'								-- 2
-AND NAME = '¿”»Ò¡ÿ'
+AND NAME = 'ÏûÑÌù¨Ï§Ä'
 ORDER BY												-- 6
 
 
@@ -35,9 +35,9 @@ public class MainApp2 {
 		
 		try {
 			
-			Class.forName("com.mysql.jdbc.Driver"); // 1 diriver ∑ŒµÂ 
+			Class.forName("com.mysql.jdbc.Driver"); 
 			
-			conn = (Connection) DriverManager.getConnection(url,"com","com");	// 2. conn ª˝º∫
+			conn = (Connection) DriverManager.getConnection(url,"com","com");
 			conn.setCharacterEncoding("euc-kr");
 			
 			StringBuffer sb = new StringBuffer();
