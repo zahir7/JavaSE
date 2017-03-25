@@ -10,18 +10,18 @@ import com.mysql.jdbc.Statement;
 
 /*	
  	JDBC - JAVA DATA BASE CONECTIVITY
-  	ê¸°ë³¸ APIë¡œëŠ” ì•ˆë¨. ì˜¤í”ˆì†ŒìŠ¤ ë¼ì´ë¸ŒëŸ¬ë¦¬ ì¶”ê°€í•´ì•¼í•¨.
+  	±âº» API·Î´Â ¾ÈµÊ. ¿ÀÇÂ¼Ò½º ¶óÀÌºê·¯¸® Ãß°¡ÇØ¾ßÇÔ.
   	
   	DATA BASE MANNAGEMNET SYSTEM
   		- ORACLE, MYSQL = MARIADB, MSSQL(SQL SERVER), CUBRID
-  		TIBERO, MONGODB ë“±
+  		TIBERO, MONGODB µî
   	
-  	1. JDBC DRIVER ê°ì²´ ë©”ëª¨ë¦¬ì— ë¡œë“œ
-  	2. DRIVER í†µí•´ Connection ê°ì²´ ìƒì„±.
-  	3. Connection ê°ì²´ë¥¼ í†µí•´ Statement ê°ì²´ ìƒì„±
-  	4. Statement ê°ì²´ë¥¼ í†µí•´ SQLì§ˆì˜ ë˜ëŠ” SQLë¬¸ ìž‘ì„±.
-  	5. Statementë¡œ SQLë¬¸ ì‹¤í–‰.
-  	6. ResultSet ê°ì²´ë¡œ SQLì§ˆì˜ì–´ ë°›ìŒ.
+  	1. JDBC DRIVER °´Ã¼ ¸Þ¸ð¸®¿¡ ·Îµå
+  	2. DRIVER ÅëÇØ Connection °´Ã¼ »ý¼º.
+  	3. Connection °´Ã¼¸¦ ÅëÇØ Statement °´Ã¼ »ý¼º
+  	4. Statement °´Ã¼¸¦ ÅëÇØ SQLÁúÀÇ ¶Ç´Â SQL¹® ÀÛ¼º.
+  	5. Statement·Î SQL¹® ½ÇÇà.
+  	6. ResultSet °´Ã¼·Î SQLÁúÀÇ¾î ¹ÞÀ½.
   	7. Connection close().
   	
   	CREATE TABLE `test` (
@@ -45,22 +45,22 @@ public class MainApp {
 		
 		try {
 			
-			Class.forName("com.mysql.jdbc.Driver"); // 1 diriver ë¡œë“œ 
+			Class.forName("com.mysql.jdbc.Driver"); // 1 diriver ·Îµå 
 			
-			conn = (Connection) DriverManager.getConnection(url,"com","com");	// 2. conn ìƒì„±
-			stmt = (Statement) conn.createStatement();	// 3. conn -> statement ìƒì„±
+			conn = (Connection) DriverManager.getConnection(url,"com","com");	// 2. conn »ý¼º
+			stmt = (Statement) conn.createStatement();	// 3. conn -> statement »ý¼º
 			
 			StringBuffer sb = new StringBuffer();
 			
 			sb.append("SELECT * FROM SAMPLE");
 //			sb.append("insert into test values(");
-//			sb.append("2, 'ìž„ì¢…ì²œ')");
+//			sb.append("2, 'ÀÓÁ¾Ãµ')");
 			
 //			sb.append("delete from test");
 
-			rs = stmt.executeQuery(sb.toString());	// sqlë¬¸ ì‹¤í–‰
+			rs = stmt.executeQuery(sb.toString());	// sql¹® ½ÇÇà
 			
-//			int result = stmt.executeUpdate(sb.toString());	// sqlë¬¸ ì‹¤í–‰
+//			int result = stmt.executeUpdate(sb.toString());	// sql¹® ½ÇÇà
 //			System.out.println(result);
 			
 			

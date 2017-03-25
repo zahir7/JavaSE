@@ -16,7 +16,7 @@ import com.mysql.jdbc.Statement;
 SELECT ID, NAME, DESCRIPTION, USE_YN, REG_USER			-- 5 
 FROM SAMPLE												-- 1
 WHERE ID = 'SAMPLE-00125'								-- 2
-AND NAME = 'ÏûÑÌù¨Ï§Ä'
+AND NAME = '¿”»Ò¡ÿ'
 ORDER BY												-- 6
 
 
