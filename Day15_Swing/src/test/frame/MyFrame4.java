@@ -35,7 +35,7 @@ public class MyFrame4 extends JFrame implements ActionListener{
 		
 		//데이타를 관리하는 모델 객체
 		model=new DefaultListModel();
-		model.addElement("김구라");
+		model.addElement("김태호");
 		list.setModel(model);
 		//버튼에 액션 리스너 등록하기
 		btn.addActionListener(this);

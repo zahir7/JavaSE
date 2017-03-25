@@ -6,7 +6,7 @@ public class MainClass05 {
 	public static void main(String[] args) {
 		//가변배열 객체 생성하기 (ArrayList)
 		ArrayList<String> list=new ArrayList<String>();
-		list.add("김구라");
+		list.add("김태호");
 		list.add("홍길동");
 		list.add("나야나");
 		list.add("한빛");

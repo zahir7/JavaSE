@@ -9,7 +9,7 @@ public class MainClass06 {
 		//Member 객체 생성하고 객체에 자료 저장하기
 		Member mem1 = new Member();
 		mem1.num = 1 ;
-		mem1.name = "김구라";
+		mem1.name = "김태호";
 		mem1.addr = "노량진";
 		
 		Member mem2 = new Member();

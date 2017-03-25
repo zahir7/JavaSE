@@ -13,7 +13,7 @@ public class MainClass01 {
 		ArrayList<String> strList=
 					new ArrayList<String>(); 
 		//생성한 객체에 데이터 추가 하기
-		strList.add("김구라");
+		strList.add("김태호");
 		strList.add("홍길동");
 		strList.add("나야나");
 		strList.add(new String("한빛"));

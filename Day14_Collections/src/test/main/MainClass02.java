@@ -13,7 +13,7 @@ public class MainClass02 {
 		//ArrayList 객체 생성하기
 		ArrayList<String> list=new ArrayList<String>();
 		//데이터 저장하기
-		list.add("김구라");
+		list.add("김태호");
 		list.add("홍길동");
 		list.add("나야나");
 		//저장된 데이터의 특정 인덱스값 얻어오기
