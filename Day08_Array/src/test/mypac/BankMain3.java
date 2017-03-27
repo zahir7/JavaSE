@@ -27,7 +27,7 @@ public class BankMain3 {
 		System.out.println("---------------------");
 		
 		//2번째 인덱스에 있는 객체의 name 필드 값을 바꾼후 출력해보기
-		bank3.name="김구라은행";
+		bank3.name="김태호은행";
 		//배열에 저장되어 있는 Bank 객체의 name 필드에 저장된 값 출력하기.
 		for(int i=0 ; i < bankList.length ; i++){
 			

@@ -11,7 +11,7 @@ public class MainClass01 {
 		//c드라이브를 File 객체로 생성한다.
 		File f = new File("http://test.edupen.com/javajsp01/");
 		
-		//c 드라이브 하위에 있는 모든 디렉토리 및 파일을 반환한다.
+		//c 드라이브 하위에 있는 모든 디렉토리 및 파일을 반환한다.,,,
 		String[] list = f.list();
 		
 		//Calendar 객체를 현재 시스템 날짜로 생성한다.

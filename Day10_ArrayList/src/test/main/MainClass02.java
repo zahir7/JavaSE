@@ -9,7 +9,7 @@ public class MainClass02 {
 		//Member 객체를 담을수 있는 ArrayList 객체 생성하기.
 		ArrayList<Member> list= new ArrayList<Member>();
 		//Member 객체 생성하기
-		Member mem1=new Member(1,"김구라","노량진");
+		Member mem1=new Member(1,"김태호","노량진");
 		Member mem2=new Member(2,"홍길동","서울");
 		Member mem3=new Member(3,"나야나","인천");
 		//생성한 Member 객체를 배열에 저장하기

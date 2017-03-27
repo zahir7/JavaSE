@@ -12,7 +12,7 @@ public class MainClass1 {
 	 	System.out.println("num:"+num);
 	 	
 	 	//Member 객체 생성하기.
-	 	Member mem1 = new Member(1,"김구라","노량진");
+	 	Member mem1 = new Member(1,"김태호","노량진");
 	 	int num1=mem1.getNum();
 	 	System.out.println("num:"+num1);
 	}

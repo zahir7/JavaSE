@@ -9,7 +9,7 @@ public class MainClass02 {
 		//배열객체 생성하기
 		String[] names=new String[5];
 		//각각의 방에 이름 저장하기
-		names[0] = "김구라";
+		names[0] = "김태호";
 		names[1] = "홍길동";
 		names[2] = "나야나";
 		names[3] = "차유람";

@@ -12,7 +12,7 @@ public class MainClass08 {
 		String str1="\"Hanbit\"";
 		System.out.println(str1);
 		
-		String str2="안녕하세요.\n \'김구라\' 입니다.\n \t 반갑습니다.";
+		String str2="안녕하세요.\n \'김태호\' 입니다.\n \t 반갑습니다.";
 		System.out.println(str2);
 		//임의의 문자열을 작성한 다음 출력해 보세요.
 	

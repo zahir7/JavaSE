@@ -4,7 +4,7 @@ import test.mypac.Car;
 
 public class MainClass01 {
 	
-	static String myName="辫备扼";
+	static String myName="辫怕龋";
 	
 	public static void main(String[] args) {
 		//Car 按眉 积己窍扁.

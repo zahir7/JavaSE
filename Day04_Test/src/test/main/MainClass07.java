@@ -12,8 +12,8 @@ public class MainClass07 {
 		if( num1 != num2){
 			System.out.println("num1 과 num2 는 달라요!");
 		}
-		String name1="김구라";
-		String name2="김구라";
+		String name1="김태호";
+		String name2="김태호";
 		if( name1.equals(name2)){ //문자열을 비교하는 방법
 			System.out.println("name1 과 name2는 같아요!");
 		}

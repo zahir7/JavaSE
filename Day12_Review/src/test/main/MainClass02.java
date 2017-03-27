@@ -6,7 +6,7 @@ import test.mypac.Person;
 public class MainClass02 {
 	public static void main(String[] args) {
 		//Person 객체 생성하기
-		new Person("김구라").goHome();
+		new Person("김태호").goHome();
 		//IRandom 객체 생성하기.
 		IRandom ran=new IRandom();
 		//생성된 IRandom 객체의 참조값을 이용해서 메소드 호출하기.
