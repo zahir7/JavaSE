@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//src/test/client/EchoClient.java=Euc-kr
+encoding//src/test/client/EchoFileClient.java=Euc-kr
+encoding//src/test/client/UnicastClient.java=Euc-kr
+encoding//src/test/client/UnicastClientThread.java=Euc-kr
+encoding//src/test/main=Euc-kr
+encoding//src/test/main/MainClass01.java=Euc-kr
+encoding//src/test/main/MainClass02.java=Euc-kr
+encoding//src/test/server/EchoFileServer.java=Euc-kr
+encoding//src/test/server/EchoServer.java=Euc-kr
+encoding//src/test/server/MultiServer.java=Euc-kr
+encoding//src/test/server/MultiServerThread.java=Euc-kr
+encoding//src/test/server/UnicastServer.java=Euc-kr
+encoding//src/test/server/UnicastServerThread.java=Euc-kr
+encoding//src/test01/UnicastClientEx01.java=Euc-kr
+encoding/<project>=Euc-kr
