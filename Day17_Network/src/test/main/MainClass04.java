@@ -1,11 +1,14 @@
 package test.main;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.PrintStream;
 import java.net.URL;
 import java.net.URLConnection;
+import java.net.URLDecoder;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -43,8 +46,8 @@ public class MainClass04 {
 		
 		//InputStream in = url.openStream();
 		InputStream in = urlConn.getInputStream();
+		InputStreamReader isr = new InputStreamReader(in,"utf-8");
 		
-		InputStreamReader isr = new InputStreamReader(in);
 		BufferedReader br = new BufferedReader(isr);
 		String readLine = null;
 		while((readLine = br.readLine()) != null){
