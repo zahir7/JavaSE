@@ -11,6 +11,7 @@ public class MainClass01 {
 		try {
 			InetAddress ia = InetAddress.getByName(
 					"www.naver.com");
+			
 			for(int i=0;i<65535;i++){
 				try {
 					//Socket(ip,port) ip와 port를 이용하여 Socket
@@ -24,7 +25,11 @@ public class MainClass01 {
 		} catch (UnknownHostException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} finally{
+			try {
+				if(s!=null)s.close();
+			} catch (IOException e) {
+			}
 		}
-		
 	}
 }
