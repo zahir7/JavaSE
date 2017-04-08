@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/test/client/BroadcastClient.java=Euc-kr
+encoding//src/test/client/BroadcastClientThread.java=Euc-kr
+encoding//src/test/client/UnicastClient.java=Euc-kr
+encoding//src/test/client/UnicastClientThread.java=Euc-kr
+encoding//src/test/server/BroadcastServer.java=Euc-kr
+encoding//src/test/server/BroadcastServerThread.java=Euc-kr
+encoding//src/test/server/UnicastServer.java=Euc-kr
+encoding//src/test/server/UnicastServerThread.java=Euc-kr
+encoding/<project>=Euc-kr
