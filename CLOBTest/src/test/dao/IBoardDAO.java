@@ -17,7 +17,7 @@ public class IBoardDAO {
 	//글 정보를 입력하는 메소드
 	public void insert(BoardDTO dto){
 		try {
-			//BoardDTO 객체에 담긴 내용을 저장하기.
+			//BoardDTO 객체에 담긴 내용을 저장하기.....~~!!!!!~!@!@!@!@!@!@!@!#!~
 			sqlMapper.insert("board_insert", dto);
 		} catch (SQLException e) {
 			e.printStackTrace();
